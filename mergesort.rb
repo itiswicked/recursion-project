@@ -16,7 +16,7 @@ def merge(ary_a, ary_b, sorted_ary = [])
   # Comparing first two item of each array.
   if ary_a[0] < ary_b[0]
     sorted_ary << ary_a[0]
-  # Calling merge without element that was added sorted_ary
+  # Calling merge without element that was added to sorted_ary
     merge(ary_a[1..-1], ary_b, sorted_ary)
   else
     sorted_ary << ary_b[0]
